@@ -1,0 +1,126 @@
+
+footer {
+  background-color: #242323;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer-left .logo {
+  width:310px;
+  height:97px;
+  margin-right: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.reseau {
+  display: flex;
+  justify-content: center;
+}
+
+.reseau img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+  filter: grayscale(80%);
+  cursor: pointer;
+}
+
+.reseau img:hover{
+  transform: translateY(-5px) scale(1.2);
+  filter: grayscale(0%);
+}
+
+footer li {
+  list-style-type: none
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TikTok Text', sans-serif;
+  font-size:18px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h4 {
+  font-family: 'Geologica', sans-serif;
+  color:rgb(3, 111, 219);
+  font-size:20px;
+  margin:10px 0;
+}
+
+.footer-menu {
+  margin-left:-30px
+}
+
+.footer-menu a {
+  text-decoration: none;
+}
+
+.footer-legal a{
+  font-family: 'TikTok Text', sans-serif;
+  text-decoration: none;
+  color:rgb(3, 111, 219);
+  transition:ease 0.3s;
+  font-size: 15px;
+}
+
+footer p {
+  margin:0;
+  padding:0;
+}
+@media (max-width: 1200px) {
+  footer .logo,.activite{
+    display:none
+  }
+  .basfooter h4,.footer-legal a{
+    font-size: 10px;
+    margin:0;
+  }
+  .footer-left div{
+    justify-content: center;
+    margin-left:5%;
+  }
+  .footer-left div h4,.footer-left a{
+    font-size: 35px;
+  }
+  .footer-legal p a{
+    font-size: 15px;
+  }
+  .basfooter h4 {
+    font-size:14px
+  }
+}
+@media (max-width: 768px) {
+  .footer-left {
+    flex-wrap: wrap;
+  }
+
+  .footer-left .logo {
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-category {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-category {
+    flex-basis: 100%;
+  }
+}

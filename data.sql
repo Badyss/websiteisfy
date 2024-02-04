@@ -1,0 +1,8 @@
+CREATE TABLE Utilisateur (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    prenom VARCHAR(255) NOT NULL,
+    nom VARCHAR(255) NOT NULL,
+    mail VARCHAR(255) NOT NULL,
+    formation VARCHAR(255) NOT NULL,
+    motdepasse VARCHAR(255) NOT NULL
+);

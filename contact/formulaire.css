@@ -1,0 +1,64 @@
+#contact, #contact input, #contact textarea {
+  background-color: white;
+}
+
+#contact{
+  text-align: center;
+  margin-top: 0;
+}
+
+#contact form {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+  }
+
+#contact input{
+    border-bottom: solid 2px grey ;
+  }
+
+  #contact input#name{
+    width: 42.5%; 
+  }
+
+  #contact input:focus, #contact textarea:focus{
+    border-color: mediumorchid;
+  }
+  #contact textarea{
+    border-radius: 10px;
+    border: solid 2px grey;
+    resize: none;
+    overflow: hidden;
+    height: auto;
+  } 
+
+  #contact button{
+    background-color: mediumorchid;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    width: 95%;
+  }
+  
+  #contact button:hover {
+    color: white;
+    background-color:black;
+  }
+

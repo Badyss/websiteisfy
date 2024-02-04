@@ -1,0 +1,148 @@
+body {
+    font-family: 'Geologica', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+  
+
+main h1{
+    color:rgb(3, 111, 219);
+    margin:0 30%;
+    margin-top:3%;
+    text-align: center;
+    font-size:40px
+}
+
+
+main p {
+    margin:0% 20%;
+    margin-top:3%;
+    font-size:20px;
+    text-align: center;
+}
+
+.msg {
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color:rgb(6, 197, 6);
+    display:none;
+}
+
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(3, 111, 219);
+    color:white;
+    padding-bottom:50px;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.3) -3px -3px 6px 1px inset;
+}  
+h2 {
+    text-align: center;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+input, textarea {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+input[type="message"],
+input[type="objet"],
+textarea {
+  width: 92%;
+  padding: 10px;
+  height:300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    background-color: rebeccapurple;
+    width:30px
+}
+  
+.half {
+    display: inline-block;
+    width: 47.7%;
+ }
+
+main button {
+    background-color: mediumorchid;
+    align-items: center;
+    color: black;
+    float:right;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    display:block;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+  
+main button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width:90%;
+    }
+    .container input {
+        height:40px;
+        font-size:30px;
+    }
+    .half {
+        display: block;
+        width: 100%;
+    }
+    main h1 {
+        margin:3% 10%;
+    }
+    main p {
+        margin:3% 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+main button {
+    background-color: mediumorchid;
+    color: black;
+    margin:0 3%;
+    border: none;
+    width: 350px;
+    height: 80px;
+    font-size: 34px;
+}
+main .boutons a{
+    margin:0 8%;
+}
+.container {
+    padding-bottom:100px;
+}
+}

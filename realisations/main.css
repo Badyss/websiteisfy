@@ -1,0 +1,378 @@
+@import url('https://fonts.cdnfonts.com/css/geologica');
+
+
+main {
+    font-family: 'Geologica', sans-serif;
+}
+
+main h1{
+    color:rgb(3, 111, 219);
+    text-align: center;
+    margin:3% 20%;
+    font-size:37px;
+}
+
+main p {
+    text-align: center;
+    margin:0 30%;
+    font-size:20px;
+    animation:haut 2s;
+}
+
+.projets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin:0 20%;
+  justify-content: center;
+
+}
+
+.projet {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin:3%;
+}
+
+.image-agrandie {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    z-index:100;
+}
+
+.overlay-noir {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 98;
+}
+
+.croix-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    display: none;
+}
+  
+.croix-visible {
+    display: block;
+}
+
+@keyframes cote {
+    0% {
+      opacity: 0;
+      transform: translateY(300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+@keyframes haut {
+    0% {
+      opacity: 0;
+      transform: translateX(-1300px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+}
+
+.projet p {
+    color:rgb(3, 111, 219);
+    margin:0;
+    font-size: 15px;
+    text-align: left;
+}
+
+.projet img {
+  width: 300px;
+  height: 170px;
+  transition: transform 0.3s ease;
+  object-fit:cover;
+}
+
+.projet img:hover  {
+  transform: scale(1.1);
+  filter: brightness(70%);
+  cursor:pointer;
+}
+
+.bouton {
+    display:flex;
+    justify-content: center;
+    margin:5% 0;
+}
+
+
+
+/* Offre*/
+
+
+section {
+    background-color:rgb(3, 111, 219);
+    margin:5% 0;
+    width:100%;
+}
+
+.offre {
+    margin:0% 20%;
+    display:flex;
+    justify-content: center;
+}
+.sousoffre {
+    background-color:white;
+    text-align: center;
+    margin:0 2%;
+    width:40%;
+    margin-top:10%;
+    margin-bottom:10%;
+    border-radius: 0 0 25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}  
+
+div.sousoffre:nth-child(2) {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color:white;
+}
+
+.sousoffre h2 {
+    color:black;
+    font-family: 'Geologica', sans-serif;
+    margin-top:0%;
+    margin-left:10%;
+    text-align: left;
+}
+
+.sousoffre h2 span {
+    color:rgb(3, 111, 219);
+    font-size:29px
+}
+
+.sousoffre p {
+    margin-top:10%;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size:20px;
+    text-align: left;
+    font-style: italic;
+}
+
+.sousoffre button {
+    background-color: mediumorchid;
+    color: black;
+    margin:2% 5%;
+    border: none;
+    width: 150px;
+    height: 40px;
+    float:right;
+    font-size: 16px;
+    border-radius: 30px;
+    justify-content: center;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+main div button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+
+.sousoffre p{
+    margin-right:30%;
+    margin-left:10%;
+}
+
+
+/* COntact */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(3, 111, 219);
+    color:white;
+    padding-bottom:50px;
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.3) -3px -3px 6px 1px inset;
+}  
+
+.form-group {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+input, textarea {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+input[type="message"],
+input[type="objet"],
+textarea {
+  width: 92%;
+  padding: 10px;
+  height:300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    background-color: rebeccapurple;
+    width:30px
+}
+  
+.half {
+    display: inline-block;
+    width: 47.7%;
+ }
+
+.container button {
+    background-color: mediumorchid;
+    align-items: center;
+    color: black;
+    float:right;
+    border: none;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    display:block;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+  
+.container button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+
+
+@media (max-width: 1300px) {
+    .offre {
+        display:block;
+        justify-content: center;
+    }
+    .sousoffre{
+        display:block;
+        width:100%;
+        justify-content: center;
+
+    }
+    .sousoffre button{
+        margin:0;
+        float:none;
+        text-align: right;
+        margin-bottom:10px;
+    }
+    .main {
+        padding-bottom:10%;
+    }
+    .sousoffre,div.sousoffre:nth-child(2) {
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    }
+    section {
+        padding:5% 0%;
+    }   
+    main p {
+        margin:0 10%;
+        text-align:start
+    }
+    .container {
+        width:90%;
+    }
+    .container input {
+        height:40px;
+        font-size:30px;
+    }
+    .half {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px) {
+
+.overlay {
+    font-size:24px
+}
+.projets p {
+    font-size:25px
+}
+.projets {
+    margin:0;
+}
+.realisations div button {
+    width: 350px;
+    height: 88px;
+    font-size: 30px;
+}
+.offre {
+    margin:0 10%;
+}
+.sousoffre p{
+    font-size:40px
+}
+.sousoffre h2 {
+    font-size: 50px;
+    padding-top:10px
+}
+.sousoffre button {
+    background-color: mediumorchid;
+    color: black;
+    margin:3%;
+    border: none;
+    width: 300px;
+    height: 70px;
+    font-size: 34px;
+}
+.container button {
+    background-color: mediumorchid;
+    color: black;
+    margin:0 3%;
+    border: none;
+    width: 350px;
+    height: 80px;
+    font-size: 34px;
+}
+
+.container {
+    padding-bottom:100px;
+}
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/tiktok-text-display');
+
+footer {
+  background-color: #242323;
+  color: white;
+  text-align: center;
+}
+
+.footer-left {
+  display: flex;
+  margin-left:78px;
+}
+
+footer h4 {
+  font-family: 'Geologica', sans-serif;
+  color:rgb(3, 111, 219);
+}
+
+.footer-left .logo {
+  width: 320px;
+  height: 140px;
+  margin-right: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-category {
+  margin:0 70px;
+}
+
+.footer-category a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TikTok Text', sans-serif;
+  font-size:20px;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'TikTok Text', sans-serif;
+  font-size:20px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  margin-top: 20px;
+}
+
+.footer-legal p{
+  padding-bottom: 10px;
+  margin:0;
+}
+
+.footer-legal a {
+  font-family: 'TikTok Text', sans-serif;
+  text-decoration: none;
+  color:rgb(3, 111, 219);
+  transition:ease 0.3s;
+}
+
+.footer-legal a:hover {
+  color:white;
+}
+
+.reseau img {
+  width: 30px;
+  height: 30px;
+  margin:0 5px;
+  transition: transform 0.3s ease;
+  filter: grayscale(80%);
+  cursor:pointer
+}
+
+.reseau img:hover{
+  transform: translateY(-5px) scale(1.2);
+  filter: grayscale(0%);
+}

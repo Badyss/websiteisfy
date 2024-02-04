@@ -1,0 +1,216 @@
+@import url('https://fonts.cdnfonts.com/css/geologica');
+@import url('https://fonts.cdnfonts.com/css/inclusive-sans');
+
+
+*{
+    scrollbar-gutter: stable;
+}
+
+main {
+    background-color: rgb(3, 111, 219);
+    margin-top:5%;
+    animation: 6s fade ;
+}
+
+main .boutons {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+main .boutons button {
+    background-color: mediumorchid;
+    color: black;
+    margin:0 3%;
+    margin-top:-30px;
+    border: none;
+    width: 250px;
+    height: 60px;
+    font-size: 23px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+main .boutons a{
+    margin:0 5%;
+}
+
+main .boutons button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+    text-decoration: black underline;
+}
+
+main h1 {
+    font-family: 'Geologica', sans-serif;
+    color:white;
+    text-align: center;
+    margin:50px 0;
+    text-shadow: 1px 0 10px rgba(240, 46, 170, 1);
+
+}
+
+/*Présentation */
+
+.offre {
+    margin:0% 20%;
+    display:flex;
+    justify-content: center;
+
+}
+.sousoffre {
+    background-color:#fff6fe;
+    text-align: center;
+    margin:0 2%;
+    width:40%;
+    margin-top:10%;
+    margin-bottom:10%;
+    border-radius: 0 0 25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}  
+
+div.sousoffre:nth-child(2) {
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color: white;
+}
+
+.sousoffre img:first-child {
+    width:90%
+}
+
+.offre .sousoffre:nth-child(2) img{
+    width:64%
+}
+
+.sousoffre h2 {
+    color:black;
+    font-family: 'Geologica', sans-serif;
+    margin-top:0%;
+    margin-left:10%;
+    text-align: left;
+}
+
+.sousoffre h2 span {
+    color:rgb(3, 111, 219);
+    font-size:29px
+}
+
+.sousoffre p {
+    margin-top:10%;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size:20px;
+    text-align: left;
+    font-style: italic;
+    margin-right:20%;
+    margin-left:10%;
+}
+
+.sousoffre button {
+    background-color: mediumorchid;
+    color: black;
+    margin:0% 5%;
+    margin-bottom:10px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    float:right;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+main div button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+
+@media (max-width: 1300px) {
+    .offre {
+        display:block;
+        justify-content: center;
+    }
+    .sousoffre{
+        display:block;
+        width:100%;
+        justify-content: center;
+
+    }
+    .sousoffre img:first-child {
+        width:50%;
+        height:50%;
+    }
+    
+    .offre .sousoffre:nth-child(2) img{
+        height:50%;
+        width:50%;
+        text-align: center;
+    }
+    .sousoffre button{
+        margin:0;
+        float:none;
+        text-align: right;
+        margin-bottom:10px;
+    }
+    .sousoffre img:first-child {
+        width:100%;
+        margin-top:20px
+    }
+    .offre .sousoffre:nth-child(2) img{
+        width:75%;
+    }
+    .main {
+        padding-bottom:10%;
+    }
+    .realisation{
+        transform:scale(1);
+        margin:0;
+        margin-top:150px;
+        margin-left:-400px;
+    }
+    .realisation img {
+        margin-left:-40px;
+    }
+
+    
+}   
+
+@media (max-width: 1000px) {
+    .offre {
+        margin:0 10%
+    }
+    main .boutons button {
+        background-color: mediumorchid;
+        color: black;
+        margin:0 3%;
+        margin-top:-30px;
+        border: none;
+        width: 350px;
+        height: 88px;
+        font-size: 34px;
+    }
+    main .boutons a{
+        margin:0 8%;
+    }
+    .sousoffre a button {
+        width: 400px;
+        height: 88px;
+        font-size: 34px;
+        margin:20px 0;
+    }
+}

@@ -1,0 +1,377 @@
+@import url('https://fonts.cdnfonts.com/css/geologica');
+
+
+.agence {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:5% 0;
+    font-family: 'Geologica', sans-serif;
+}
+  
+.membre {
+    opacity:0;
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+  
+.membre.appear {
+    animation:cote 2s ease forwards;
+}
+
+@keyframes cote {
+    0% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+.membre:hover {
+    transform: translateY(-5px);
+}
+  
+.profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+  
+.membre:hover .profil {
+    transform: scale(1.1);
+}
+  
+.infos h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #333333;
+    transition: color 0.3s ease;
+}
+  
+.infos span {
+    font-size: 18px;
+    color: rgb(3, 111, 219);
+}
+  
+.reseaux-sociaux {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+.membre:hover .reseaux-sociaux {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.reseaux-sociaux li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.reseaux-sociaux img {
+    width: 28px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+  
+.reseaux-sociaux img:hover {
+    opacity: 1;
+}
+  
+/* Présentation */
+
+.pres {
+    font-family: 'Geologica', sans-serif;
+    background-color:rgb(3, 111, 219);
+    color:white;
+    animation: 6s fade ;
+}
+
+.pres h1{
+    padding-top:30px;
+    text-align: center;
+    margin:0 20%;
+}
+
+.pres p {
+    margin:2% 20%;
+    padding-bottom:30px;
+    font-size: 20px;
+}
+
+/* Réalisations */
+
+.titrereal {
+    font-family: 'Geologica', sans-serif;
+    margin-left:20%;
+    margin-top:4%;
+    animation: 6s fade ;
+}
+.realisations {
+    display: block;
+    font-family: 'Geologica', sans-serif;
+}
+  
+.bloc {
+    display:flex;
+    justify-content: center;
+}
+.realisation {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    margin:2%;
+    transition: transform 0.3s ease;
+}
+  
+.realisation:hover {
+    transform: translateY(-5px);
+}
+  
+.realisation img {
+    width:350px;
+    height: 200px;
+}
+
+.realisation .bouton {
+    display:flex;
+    justify-content: right;
+}
+.realisation h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+  
+.realisation p {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(3, 111, 219);
+}  
+
+.bouton a{
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  margin-right: 5%;
+}
+
+.realisations button {
+    background-color: mediumorchid;
+    align-items: center;
+    color: black;
+    margin:2% 5%;
+    margin-bottom:5%;
+    border: none;
+    width: 220px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    display:block;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.realisations button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+/* DEvis */
+
+.devis {
+    margin:0 20%;
+    font-family: 'Geologica', sans-serif;
+    color:white;
+    padding-bottom: 100px;
+
+}
+
+.devis1  {
+    background-color:rgb(3, 111, 219);
+    border-radius: 10px;
+    display:flex;
+    padding:20px 0;
+}
+
+.devis h1 {
+    padding-top:2%;
+    margin-left:3%;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.versdevis {
+    display:block;
+}
+.devis p {
+    margin-left:3%;
+    padding-bottom:2%;
+    margin-right:40%;
+}
+
+.prebutton {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right:100px
+}
+
+.devis button {
+    background-color: mediumorchid;
+    align-items: center;
+    color: black;
+    margin:2% 5%;
+    border: none;
+    width: 220px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    cursor:pointer;
+    font-family: 'Geologica', sans-serif;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.devis button:hover {
+    background-color: rgb(223, 222, 222);
+    color:black;
+    box-shadow: 1px 1px 10px white;
+    border:1px solid #6ED355;
+    filter:invert(100%);
+}
+
+@media (max-width: 1200px) {
+    .devis1{
+        display:block;
+    }
+    .prebutton {
+        margin:0;
+        justify-content: center;
+    }
+    .versdevis p {
+        margin:5% 20%;
+        font-size:20px;
+    }
+    .versdevis h1{
+        text-align: center;
+    }
+    .realisations div {
+        display:block;
+    }
+    .realisations {
+        margin:0 35%;
+    }
+    .pres h1{
+        font-size:20px;
+        margin:0 15%;
+    }
+    .pres p {
+        font-size:14px;
+        margin:5% 10%;
+        text-align: justify;
+    }
+    .realisation{
+        transform:scale(1.4);
+        margin-top:150px;
+    }
+    .realisations button {
+        margin-left:0%;
+        margin-top:100px;
+        width:300px;
+        height:70px;
+        font-size:21px;
+    }
+    .devis {
+        margin:0 10%;
+        margin-top:10%;
+    }
+    .devis p {
+        font-size:14px;
+        margin:5% 10%;
+    }
+    .devis h1{
+        font-size:17px;
+    }
+    .devis button {
+        width:300px;
+        height:70px;
+        font-size:21px;   
+    }
+    main {
+        padding-bottom:50px;
+    }
+
+    .offre{
+        margin:0 10%;
+    }
+    .sousoffre button{
+        width:300px;
+        height:70px;
+        font-size:28px;
+        text-align: center;
+    }
+    .sousoffre p {
+        font-size: 20px;
+        margin-right:10%;
+    }
+    .realisation h3 {
+        font-size:24px
+    }
+    .realisation p {
+        font-size:20px
+    }
+}
+
+@media (max-width: 1000px) {
+    .prebutton {
+        justify-content: center;
+    }
+    .realisations div button {
+        width: 350px;
+        height: 88px;
+        font-size: 30px;
+    }
+    .agence {
+        margin:7% 0%;
+    }
+    .agence span {
+        font-size:20px;
+    }
+    .devis button {
+        width: 350px;
+        height: 88px;
+        font-size: 30px;
+    }
+
+}
+@media (max-width: 768px) {
+    .membre {
+      width: 100%;
+    }
+}
